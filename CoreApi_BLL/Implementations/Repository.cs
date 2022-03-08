@@ -12,8 +12,7 @@ namespace CoreApi_BLL.Implementations
 {
     public class Repository<T> : IRepository<T> where T : class, new()
     {
-        //private readonly MyContext _myContext;  
-        //_myContext nesnesi protected olursa kalıtımla gittiği yerlerde  private şekilde kullanılır.
+
         protected readonly MyContext _myContext;
         public Repository(MyContext myContext)
         {
@@ -147,5 +146,4 @@ namespace CoreApi_BLL.Implementations
             }
         }
     }
-
 }

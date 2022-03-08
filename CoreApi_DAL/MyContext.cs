@@ -15,6 +15,6 @@ namespace CoreApi_DAL
 
         }
         //Tablolara ait sanal dbsetleru
-        public virtual DbSet<Assigment> Assigments { get; set; }
+        public virtual DbSet<Assignment> Assigments { get; set; }
     }
 }
